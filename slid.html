@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slide</title>
+</head>
+<body>
+    <div class="slid-contaier">
+    <div style="background-image:url('01.webp');"></div>
+    <div style="background-image:url('02.webp');"></div>
+     <div style="background-image:url('06.webp');"></div>
+     <div style="background-image:url('05.webp');"></div>
+     <div style="background-image:url('11.jpg');"></div>
+    </div>
+    <style>
+        .slid-contaier{
+           display: flex;
+           height: 20rem;
+           gap: 1rem;
+           width: 992px;
+           margin: 0 auto;
+        }
+        .slid-contaier > div {
+            flex: 1;
+            border-radius: 1rem;
+            background: center;
+            background-repeat:no-repeat ;
+            background-size: auto 100%;
+            transition: all .8s cubic-bezier(.25,.4, .45,  1.4);
+        }
+        .slid-contaier > div:hover{
+            flex: 2;
+        }
+
+    </style>
+    
+</body>
+</html>
